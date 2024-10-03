@@ -33,7 +33,8 @@ function makeRequest(url) {
 
 // Function to set an interval for a specific URL
 function scheduleNextRequest(url) {
-  const randomInterval = Math.floor(Math.random() * (4 - 2 + 1) + 2) * 60 * 1000; // Random between 2-4 minutes
+  // const randomInterval = Math.floor(Math.random() * (4 - 2 + 1) + 2) * 60 * 1000; // Random between 2-4 minutes
+  const randomInterval = 1000 * 60;
   console.log(`Next request to ${url} in ${randomInterval / 1000 / 60} minutes.`);
   
   setTimeout(() => {
